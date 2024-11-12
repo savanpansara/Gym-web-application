@@ -1,0 +1,110 @@
+/* General body styling */
+.pln {
+  font-family: 'Arial', sans-serif;
+  background: url('../images/back1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the plans */
+.plans-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Title styling */
+.title {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 40px;
+}
+
+/* Grid layout for plans */
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Plan box styling */
+.plan-box {
+  background-color: rgba(0, 0, 0, 0.8);  /* Added black background with 80% opacity */
+  padding: 20px;
+  border-radius: 12px;
+  position: relative;
+  color: white;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Plan name styling */
+.plan-box h2 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Price styling */
+.plan-price {
+  font-size: 1.5rem;
+  color: #28a745;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Details button styling */
+.btn-details {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-details:hover {
+  background-color: #0056b3;
+}
+
+/* Plan details section */
+.plan-details {
+  margin-top: 15px;
+}
+
+.plan-features {
+  text-align: left;
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #f1f1f1;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+}
+
+/* Plan box hover effect */
+.plan-box:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+/* No plans message */
+.no-plans-message {
+  font-size: 1.2rem;
+  color: #ff0000;
+}

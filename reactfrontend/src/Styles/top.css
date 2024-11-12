@@ -1,0 +1,43 @@
+.hero-section {
+    position: relative;
+    height:400px ;
+    background-image: url('../images/h1.avif');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero-content {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    color: white;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-left: 435px;
+  }
+  
+  .hero-content h3 {
+    /* font-size: 18px; */
+    margin-left: 250px; 
+    /* align-content: center; */
+  }
+  
+  .hero-content .btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-left: 445px;
+    background-color:#007bff;;
+    color: black;
+  }
+  
